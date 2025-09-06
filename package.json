@@ -1,0 +1,20 @@
+{
+  "name": "blue-carbon-blockchain",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.0",
+    "@openzeppelin/contracts": "^4.9.6",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.15.0",
+    "hardhat": "^3.0.0"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "grant:issuer": "hardhat run scripts/grantIssuerRole.cjs --network sepolia"
+  },
+  "type": "module",
+  "dependencies": {
+    "mongodb": "^6.19.0"
+  }
+}
